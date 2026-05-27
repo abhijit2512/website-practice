@@ -6,10 +6,13 @@ import Refund from './pages/Refund';
 import NotFound from './pages/NotFound';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
 import ScrollToHash from './components/ScrollToHash';
+import SkipLink from './components/SkipLink';
+import BackToTop from './components/BackToTop';
 
 export default function App() {
   return (
     <>
+      <SkipLink />
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,6 +22,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <FloatingWhatsAppButton />
+      <BackToTop />
     </>
   );
 }
