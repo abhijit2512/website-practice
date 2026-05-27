@@ -32,8 +32,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-7xl container-px flex items-center justify-between h-16 md:h-20" aria-label="Primary">
-        <Link to="/" aria-label="Educators United home">
-          <Logo />
+        <Link to="/" aria-label="Educators United home" className="shrink-0">
+          <Logo size={48} />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-1">

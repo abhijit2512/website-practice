@@ -11,7 +11,9 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-7xl container-px grid sm:grid-cols-2 lg:grid-cols-12 gap-10">
         <div className="lg:col-span-4">
-          <Logo variant="light" />
+          <div className="inline-flex items-center gap-3 rounded-2xl bg-white/5 ring-1 ring-white/10 px-3 py-2 backdrop-blur">
+            <Logo variant="light" size={52} />
+          </div>
           <p className="mt-4 text-sm leading-relaxed text-white/70 max-w-sm">
             Educators United is an online learning and academic support brand for Indian students —
             built around mentoring, clarity and meaningful progress.
