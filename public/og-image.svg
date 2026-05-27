@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1a4a"/>
+      <stop offset="55%" stop-color="#1d36b3"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="120" r="180" fill="url(#acc)" opacity="0.25"/>
+  <circle cx="120" cy="520" r="220" fill="#3a66f5" opacity="0.22"/>
+  <g transform="translate(80,200)" fill="#fff" font-family="Plus Jakarta Sans, Inter, sans-serif">
+    <text font-size="64" font-weight="800">Educators United</text>
+    <text y="86" font-size="34" opacity="0.85">Online Learning &amp; Academic Support</text>
+    <text y="160" font-size="22" opacity="0.7">Personalised tutoring · Exam coaching · Career guidance</text>
+  </g>
+</svg>
