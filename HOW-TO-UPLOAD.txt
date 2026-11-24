@@ -1,0 +1,62 @@
+=====================================================
+  DigitTech Website — How to upload & test it
+=====================================================
+
+WHAT'S INSIDE
+  index.html        Home page
+  about.html        About Us
+  services.html     All 9 services
+  internship.html   Internship & Training (with application form)
+  contact.html      Contact (form, phone, WhatsApp, map)
+  assets/           Logo, styles, 3D animation scripts (keep this folder next to the pages)
+
+-----------------------------------------------------
+1) QUICK LOOK ON YOUR OWN COMPUTER
+-----------------------------------------------------
+  Unzip the file, then double-click index.html. It opens in your browser.
+  Everything works offline except the Google map and fonts (they need internet).
+
+-----------------------------------------------------
+2) TEST PRIVATELY ON YOUR HOSTING (before going live)  <-- recommended
+-----------------------------------------------------
+  This lets you check the site on your real domain WITHOUT replacing your current site.
+
+  a) Log in to your hosting control panel (cPanel / hPanel).
+  b) Open "File Manager" and go into the "public_html" folder.
+  c) Create a new folder named:  preview
+  d) Open "preview", click "Upload", and upload digittech-website.zip
+  e) Right-click the zip, then choose "Extract". Make sure index.html sits directly inside "preview".
+  f) Visit:  https://digittech.in/preview/
+     Check it on your phone and computer.
+
+-----------------------------------------------------
+3) GO LIVE
+-----------------------------------------------------
+  OPTION A — Hosting WITHOUT WordPress (simplest)
+    Upload & extract the zip directly in "public_html" (index.html directly inside it).
+    Visit https://digittech.in  — done.
+
+  OPTION B — Your domain currently runs WordPress
+    This website is a fast, custom-coded site (plain HTML). It does NOT need WordPress.
+    - Back up first: in File Manager, download a copy of public_html (or use your host's backup tool).
+    - Upload & extract the zip into public_html. On most hosts index.html opens before
+      WordPress's index.php, so the new site appears on your homepage.
+    - If WordPress still shows, rename "index.php" in public_html to "index-wp-old.php".
+    - To undo, delete index.html (or rename index-wp-old.php back to index.php).
+
+    Prefer to keep it inside WordPress? Install the free "Insert Headers and Footers"
+    or a "static HTML" page plugin. It works, but it's slower and harder to keep looking
+    exactly like this. Option A/B is recommended.
+
+-----------------------------------------------------
+4) EASY EDITS (open the file in Notepad / any text editor)
+-----------------------------------------------------
+  - WhatsApp number for all buttons & forms:
+        assets/js/main.js  ->  WHATSAPP_NUMBER = "919875480209"
+  - Phone number shown on pages: search for  9875480209  in the .html files.
+  - Text on any page: open the .html file, find the sentence, change it, save, re-upload.
+
+HOW THE FORMS WORK
+  The Contact and Internship forms need no email setup. When a visitor presses
+  "Send", WhatsApp opens with their details already filled in and addressed to
+  +91 98754 80209. They just press send.
